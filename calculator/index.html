@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <!-- <link rel="stylesheet" href="styles.css" /> -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <div id="display">
+        <input type="text" id="result" readonly />
+      </div>
+      <div class="row-first">
+        <input
+          type="button"
+          value="1"
+          onclick="appendToResult('1')"
+          class="one"
+        />
+        <input
+          type="button"
+          value="2"
+          onclick="appendToResult('2')"
+          class="two"
+        />
+        <input
+          type="button"
+          value="3"
+          onclick="appendToResult('3')"
+          class="three"
+        />
+        <input
+          type="button"
+          value="+"
+          onclick="appendToResult('+')"
+          class="plus"
+        />
+      </div>
+      <div class="row-second">
+        <input
+          type="button"
+          value="4"
+          onclick="appendToResult('4')"
+          class="four"
+        />
+        <input
+          type="button"
+          value="5"
+          onclick="appendToResult('5')"
+          class="five"
+        />
+        <input
+          type="button"
+          value="6"
+          onclick="appendToResult('6')"
+          class="six"
+        />
+        <input
+          type="button"
+          value="-"
+          onclick="appendToResult('-')"
+          class="minus"
+        />
+      </div>
+      <div class="row-third">
+        <input
+          type="button"
+          value="7"
+          onclick="appendToResult('7')"
+          class="seven"
+        />
+        <input
+          type="button"
+          value="8"
+          onclick="appendToResult('8')"
+          class="eight"
+        />
+        <input
+          type="button"
+          value="9"
+          onclick="appendToResult('9')"
+          class="nine"
+        />
+        <input
+          type="button"
+          value="*"
+          onclick="appendToResult('*')"
+          class="into"
+        />
+      </div>
+      <div class="row-fourth">
+        <input
+          type="button"
+          value="."
+          onclick="appendToResult('.')"
+          class="decimal"
+        />
+        <input
+          type="button"
+          value="0"
+          onclick="appendToResult('0')"
+          class="zero"
+        />
+        <input
+          type="button"
+          value="%"
+          onclick="appendToResult('%')"
+          class="modulo"
+        />
+        <input
+          type="button"
+          value="/"
+          onclick="appendToResult('/')"
+          class="divide"
+        />
+      </div>
+      <div class="fow-fifth">
+        <input
+          type="button"
+          value="C"
+          onclick="clearResult()"
+          class="clear"
+          id="clear"
+        />
+        <input
+          type="button"
+          value="="
+          onclick="calculate()"
+          class="equalto"
+          id="equalto"
+        />
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
